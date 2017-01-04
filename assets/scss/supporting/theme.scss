@@ -1,5 +1,12 @@
-/* Navbar fix for dropdown menus
+/* Navbar
 ----------------------------------------------------------------------------- */
+.navbar {
+    padding: {
+        right: 0;
+        left: 0;
+    }
+}
+
 .dropdown .nav-item {
     float: unset;
     margin-left: 0 !important;
@@ -11,6 +18,19 @@
     padding: $spacer-y 0;
     .site-title {
         @extend .h1;
+    }
+    .site-description {
+        margin-bottom: 0;
+    }
+}
+
+/* Home Featured
+----------------------------------------------------------------------------- */
+.jumbotron {
+    border-radius: 0;
+    padding: {
+        right: 0;
+        left: 0;
     }
 }
 

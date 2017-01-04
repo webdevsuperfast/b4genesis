@@ -1,0 +1,43 @@
+// Comments
+.entry-comments {
+	margin-bottom: $spacer-y;
+	h3 {
+		margin-bottom: $spacer-y;
+	}
+	.comment {
+		margin: 0;
+		margin-bottom: $spacer-y;
+		// padding-bottom: $spacer-y;
+		&.parent {
+			margin-bottom: 0;
+			// padding-bottom: 0;
+		}
+		.media-left {
+			img {
+				max-width: inherit;
+			}
+		}
+	}
+	.children {
+		margin-top: $spacer-y;
+        list-style: none;
+	}
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    width: 50%;
+}
+
+// Trackbacks
+.entry-pings {
+	.pingback {
+		margin-bottom: $spacer-y;
+		padding-bottom: $spacer-y;
+	}
+}
+
+.ping-list {
+	@include list-unstyled;
+}

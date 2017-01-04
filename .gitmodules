@@ -1,0 +1,4 @@
+[submodule "lib/modules/wp-bootstrap-navwalker"]
+	path = lib/modules/wp-bootstrap-navwalker
+	url = https://github.com/twittem/wp-bootstrap-navwalker.git
+	branch = v4

@@ -1,0 +1,66 @@
+/* Navbar fix for dropdown menus
+----------------------------------------------------------------------------- */
+.dropdown .nav-item {
+    float: unset;
+    margin-left: 0 !important;
+}
+
+/* Site Header
+----------------------------------------------------------------------------- */
+.site-header {
+    padding: $spacer-y 0;
+    .site-title {
+        @extend .h1;
+    }
+}
+
+/* Site Inner
+----------------------------------------------------------------------------- */
+.site-inner {
+    padding: $spacer-y*2 0;
+}
+
+/* Archive/Blog Styling
+----------------------------------------------------------------------------- */
+
+body.archive,
+body.blog {
+    .post {
+        border-bottom: 1px solid $hr-border-color;
+        padding-bottom: $spacer-y;
+        margin-bottom: $spacer-y;
+    }
+}
+
+.entry-image-link {
+    display: inline-block;
+    margin-bottom: $spacer-y;
+}
+
+/* Sidebar
+----------------------------------------------------------------------------- */
+.sidebar {
+    .widget {
+        margin-bottom: $spacer-y;
+        padding-bottom: $spacer-y;
+    }
+}
+
+/* Footer Widgets
+----------------------------------------------------------------------------- */
+.footer-widgets {
+    border-bottom: 1px solid $hr-border-color;
+    padding: $spacer-y*2 0;
+    ul, ol {
+        @include list-unstyled;
+    }
+}
+
+/* Site Footer
+----------------------------------------------------------------------------- */
+.site-footer {
+    padding: $spacer-y 0;
+    p {
+        margin-bottom: 0;
+    }
+}

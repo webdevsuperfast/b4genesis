@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
+    autoprefixer = require('autoprefixer'),
+    postcss = require('gulp-postcss'),
     minifycss = require('gulp-clean-css'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
@@ -30,7 +31,8 @@ gulp.task('styles', function(){
     
     var mergeStream = merge(sassStream, cssStream)
         .pipe(concat('app.css'))
-        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+        .pipe(postcss([ autoprefixer({ browsers: ["> 0%"] }) ]))
+        // .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(cmq())
         .pipe(gulp.dest('temp/css'))
         .pipe(rename('app.css'))

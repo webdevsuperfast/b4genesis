@@ -4,8 +4,8 @@
  *
  * @package 	B4Genesis
  * @since 		1.0
- * @author 		RecommendWP <http://www.recommendwp.com>
- * @copyright 	Copyright (c) 2017, RecommendWP
+ * @author 		Rotsen Mark Acob <http://rotsenacob.com>
+ * @copyright 	Copyright (c) 2017, Rotsen Mark Acob
  * @license 	http://opensource.org/licenses/gpl-2.0.php GNU Public License
  *
  */

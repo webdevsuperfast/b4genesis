@@ -4,19 +4,34 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    img {
+        display: block;
+    }
 }
 
 @include media-breakpoint-up(sm) {
     .alignleft {
         @include float-left;
+        img {
+            margin: auto;
+        }
     }
 
     .alignright {
         @include float-right;
+        img {
+            margin: auto;
+        }
     }
 
     .aligncenter {
-        margin: auto;
+        margin: {
+            right: auto;
+            left: auto;
+        }
+        img {
+            margin: auto;
+        }
     }
 
     img.alignleft {
@@ -41,6 +56,13 @@
 
     img.alignnone {
         margin: 5px 0;
+    }
+}
+
+.wp-caption {
+    margin-bottom: $spacer;
+    .wp-caption-text {
+        margin-bottom: 0;
     }
 }
 

@@ -55,7 +55,7 @@ gulp.task('scripts', function() {
     return gulp.src([
         'assets/js/source/*.js',
         'bower_components/bootstrap/dist/js/bootstrap.js',
-        'bower_components/tether/dist/js/tether.js'
+        'bower_components/popper.js/dist/umd/popper.js'
     ])
     .pipe(changed('js'))
     .pipe(foreach(function(stream, file){

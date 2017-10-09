@@ -21,9 +21,9 @@ function b4g_enqueue_scripts() {
 		wp_deregister_script( 'superfish' );
 		wp_deregister_script( 'superfish-args' );
 
-		// Tether JS
-		wp_register_script( 'app-tether-js', B4G_THEME_JS . 'tether.min.js', array( 'jquery' ), $version, true );
-		wp_enqueue_script( 'app-tether-js' );
+		// Popper JS
+		wp_register_script( 'app-popper-js', B4G_THEME_JS . 'popper.min.js', array( 'jquery' ), $version, true );
+		wp_enqueue_script( 'app-popper-js' );
 
 		// Bootstrap JS
 		wp_register_script( 'app-bootstrap-js', B4G_THEME_JS . 'bootstrap.min.js', array( 'jquery' ), $version, true );

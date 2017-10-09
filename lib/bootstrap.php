@@ -73,7 +73,7 @@ function b4g_merge_genesis_attr_classes() {
             'comment-list'              => 'list-unstyled',
             'ping-list'                 => 'list-unstyled',
             'home-featured'             => 'jumbotron',
-            'nav-primary'               => 'navbar navbar-light bg-faded',
+            'nav-primary'               => 'navbar navbar-expand-lg navbar-light bg-light',
             'entry-image'               => 'img-fluid',
             'site-footer'               => 'bg-faded text-muted',
             'footer-widgets'            => 'bg-faded text-muted'

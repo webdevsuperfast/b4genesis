@@ -15,7 +15,7 @@
 /* Site Header
 ----------------------------------------------------------------------------- */
 .site-header {
-    padding: $spacer-y 0;
+    padding: $spacer 0;
     .site-title {
         @extend .h1;
     }
@@ -37,7 +37,7 @@
 /* Site Inner
 ----------------------------------------------------------------------------- */
 .site-inner {
-    padding: $spacer-y*2 0;
+    padding: $spacer*2 0;
 }
 
 /* Archive/Blog Styling
@@ -47,22 +47,22 @@ body.archive,
 body.blog {
     .post {
         border-bottom: 1px solid $hr-border-color;
-        padding-bottom: $spacer-y;
-        margin-bottom: $spacer-y;
+        padding-bottom: $spacer;
+        margin-bottom: $spacer;
     }
 }
 
 .entry-image-link {
     display: inline-block;
-    margin-bottom: $spacer-y;
+    margin-bottom: $spacer;
 }
 
 /* Sidebar
 ----------------------------------------------------------------------------- */
 .sidebar {
     .widget {
-        margin-bottom: $spacer-y;
-        padding-bottom: $spacer-y;
+        margin-bottom: $spacer;
+        padding-bottom: $spacer;
     }
 }
 
@@ -70,7 +70,7 @@ body.blog {
 ----------------------------------------------------------------------------- */
 .footer-widgets {
     border-bottom: 1px solid $hr-border-color;
-    padding: $spacer-y*2 0;
+    padding: $spacer*2 0;
     ul, ol {
         @include list-unstyled;
     }
@@ -79,7 +79,7 @@ body.blog {
 /* Site Footer
 ----------------------------------------------------------------------------- */
 .site-footer {
-    padding: $spacer-y 0;
+    padding: $spacer 0;
     p {
         margin-bottom: 0;
     }

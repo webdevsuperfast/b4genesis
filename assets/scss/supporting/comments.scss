@@ -1,16 +1,14 @@
 // Comments
 .entry-comments {
-	margin-bottom: $spacer-y;
+	margin-bottom: $spacer;
 	h3 {
-		margin-bottom: $spacer-y;
+		margin-bottom: $spacer;
 	}
 	.comment {
 		margin: 0;
-		margin-bottom: $spacer-y;
-		// padding-bottom: $spacer-y;
+		margin-bottom: $spacer;
 		&.parent {
 			margin-bottom: 0;
-			// padding-bottom: 0;
 		}
 		.media-left {
 			img {
@@ -19,7 +17,7 @@
 		}
 	}
 	.children {
-		margin-top: $spacer-y;
+		margin-top: $spacer;
         list-style: none;
 	}
 }
@@ -33,8 +31,8 @@
 // Trackbacks
 .entry-pings {
 	.pingback {
-		margin-bottom: $spacer-y;
-		padding-bottom: $spacer-y;
+		margin-bottom: $spacer;
+		padding-bottom: $spacer;
 	}
 }
 

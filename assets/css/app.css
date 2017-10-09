@@ -9629,6 +9629,20 @@ article {
     margin-right: auto;
 }
 
+.alignleft img,
+.alignright img,
+.aligncenter img {
+    display: block;
+}
+
+.wp-caption {
+    margin-bottom: 1rem;
+}
+
+.wp-caption .wp-caption-text {
+    margin-bottom: 0;
+}
+
 .wp-caption .wp-caption-text,
 .entry-caption,
 .gallery-caption {
@@ -10951,10 +10965,20 @@ body.blog .post {
     .alignleft {
         float: left !important;
     }
+    .alignleft img {
+        margin: auto;
+    }
     .alignright {
         float: right !important;
     }
+    .alignright img {
+        margin: auto;
+    }
     .aligncenter {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .aligncenter img {
         margin: auto;
     }
     img.alignleft {

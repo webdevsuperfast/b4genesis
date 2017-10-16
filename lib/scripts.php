@@ -29,6 +29,14 @@ function b4g_enqueue_scripts() {
 		wp_register_script( 'app-bootstrap-js', B4G_THEME_JS . 'bootstrap.min.js', array( 'jquery' ), $version, true );
 		wp_enqueue_script( 'app-bootstrap-js' );
 
+		// Smart Menus
+		wp_register_script( 'app-smartmenus-js', B4G_THEME_JS . 'jquery.smartmenus.min.js', array( 'jquery' ), $version, true );
+		wp_register_script( 'app-smartmenus-bootstrap-js', B4g_THEME_JS . 'jquery.smartmenus.bootstrap-4.min.js', array( 'app-smartmenus-js' ), $version, true );
+
+		wp_enqueue_script( 'app-smartmenus-js' );
+		wp_enqueue_script( 'app-smartmenus-bootstrap-js' );
+
+		// Theme JS
 		wp_register_script( 'app-js', B4G_THEME_JS . 'app.min.js', array( 'jquery' ), $version, true );
 		wp_enqueue_script( 'app-js' );
 	}

@@ -15,7 +15,6 @@
   "license": "MIT",
   "homepage": "https://bitbucket.com/recommendwp/b4genesis",
   "devDependencies": {
-    "autoprefixer": "^7.1.5",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
@@ -28,7 +27,6 @@
     "gulp-jsbeautifier": "^2.1.1",
     "gulp-jshint": "^2.0.4",
     "gulp-notify": "^3.0.0",
-    "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",

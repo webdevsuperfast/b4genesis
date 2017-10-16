@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    autoprefixer = require('autoprefixer'),
-    postcss = require('gulp-postcss'),
+    autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-clean-css'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
@@ -21,7 +20,7 @@ var gulp = require('gulp'),
 // CSS
 gulp.task('styles', function(){
     var cssStream = gulp.src([
-        
+        'bower_components/smartmenus/dist/addons/bootstrap-4/jquery.smartmenus.bootstrap-4.css'
     ])
     .pipe(concat('smartmenus.css'));
 
@@ -31,12 +30,11 @@ gulp.task('styles', function(){
     
     var mergeStream = merge(sassStream, cssStream)
         .pipe(concat('app.css'))
-        .pipe(postcss([ autoprefixer({ browsers: ["> 0%"] }) ]))
-        // .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(cmq())
         .pipe(gulp.dest('temp/css'))
         .pipe(rename('app.css'))
-        .pipe(prettify())
+        .pipe(minifycss())
         .pipe(gulp.dest('assets/css'))
         .pipe(notify({ message: 'Styles task complete' }));
     
@@ -55,7 +53,9 @@ gulp.task('scripts', function() {
     return gulp.src([
         'assets/js/source/*.js',
         'bower_components/bootstrap/dist/js/bootstrap.js',
-        'bower_components/popper.js/dist/umd/popper.js'
+        'bower_components/popper.js/dist/umd/popper.js',
+        'bower_components/smartmenus/dist/jquery.smartmenus.js',
+        'bower_components/smartmenus/dist/addons/bootstrap-4/jquery.smartmenus.bootstrap-4.js'
     ])
     .pipe(changed('js'))
     .pipe(foreach(function(stream, file){

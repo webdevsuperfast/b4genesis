@@ -2,19 +2,17 @@
   "name": "b4genesis",
   "version": "0.0.1",
   "description": "Genesis child theme based on Bootstrap 4",
-  "repository": {
-    "type": "git",
-    "url": "git+https://bitbucket/recommendwp/b4genesis.git"
-  },
+  "repository": "git+https://bitbucket/recommendwp/b4genesis.git",
   "keywords": [
     "bootstrap",
     "genesis",
     "wordpress"
   ],
-  "author": "RecommendWP",
+  "author": "Rotsen Mark Acob",
   "license": "MIT",
   "homepage": "https://bitbucket.com/recommendwp/b4genesis",
   "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
@@ -30,9 +28,12 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1",
     "jshint": "^2.9.5",
     "merge-stream": "^1.0.1",
+    "popper.js": "^1.12.6",
     "run-sequence": "^2.2.0",
     "vinyl-paths": "^2.1.0"
-  }
+  },
+  "main": "index.js"
 }
